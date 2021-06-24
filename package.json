@@ -1,0 +1,23 @@
+{
+  "name": "pack_learn",
+  "version": "1.0.0",
+  "description": "learn webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "william",
+  "license": "ISC",
+  "keywords": [
+    "william"
+  ],
+  "devDependencies": {
+    "css-loader": "^5.2.6",
+    "file-loader": "^6.2.0",
+    "vue-loader": "^15.9.7",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
