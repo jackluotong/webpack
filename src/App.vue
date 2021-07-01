@@ -1,32 +1,27 @@
 <template>
     <div>
         <main-header></main-header>
+        <main-todo></main-todo>
+        <todo-info></todo-info>
     </div>
 </template>
 <script>
-import MainHeader from './components/MainHeader/index.vue'
-import './style/global.styl'
+import MainHeader from './components/MainHeader/MainHeader.vue'
+import MainToDo from './components/MainToDo/MainToDo.vue'
+import ToDoInfo from './components/MainToDo/Son/ToDoInfo/index.vue'
+import './assets/style/global.styl'
 import './index.css'
 export default {
     name: 'App',
     components: {
         MainHeader,
+        MainToDo,
+        ToDoInfo,
     },
     data() {
-        return {
-            content: '',
-        }
+        return {}
     },
-    methods: {
-        add() {
-            if (this.content) {
-                this.toDo.push(this.content)
-                this.content = null
-            } else {
-                console.log(this.content)
-            }
-        },
-    },
+    methods: {},
     created() {},
 }
 </script>

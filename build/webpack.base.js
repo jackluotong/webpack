@@ -54,6 +54,10 @@ module.exports = {
                     },
                 },
             },
+            {
+                test: /\/less?$/,
+                use: ['style-loader', 'css-loader', 'less-loader'],
+            },
         ],
     },
     //插件
@@ -67,6 +71,9 @@ module.exports = {
         alias: {
             // 解决文件查找
             vue: 'vue/dist/vue.js',
+            '@': path.resolve(__dirname, '../src'),
+            style: path.resolve(__dirname, '../src/assets/style'),
+            images: path.resolve(__dirname, '../src/assets/images'),
         },
     },
 }

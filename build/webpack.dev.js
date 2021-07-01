@@ -12,7 +12,7 @@ const devConfig = {
         contentBase: './dist',
         open: true,
         hot: true,
-        port: 3030,
+        port: 3031,
         compress: true,
     },
     //插件
